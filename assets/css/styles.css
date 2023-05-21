@@ -46,15 +46,20 @@ a {
 }
 
 .heading {
+    font-weight: 700;
     font-family: var(--font-heading);
-    line-height: 1.17;
     letter-spacing: -0.02em;
     color: #171100;
 }
 
-.lv1 {
-    font-weight: 700;
+.heading.lv1 {
+    line-height: 1.17;
     font-size: 5.6rem;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 48px;
 }
 
 .desc {
@@ -119,8 +124,9 @@ a {
     margin-left: 49px;
 }
 
-/* Hero */
+/* === Hero === */
 .hero {
+    background: #fffcf4;
     padding: 56px 0 65px;
 }
 
@@ -148,7 +154,7 @@ a {
     background: #ffffff;
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    padding: 28px 24px;
+    padding: 24px;
 }
 
 .summary .item {
@@ -263,4 +269,42 @@ a {
 
 .content-block .stats:first-child {
     margin-left: 0;
+}
+
+/* ===== Popular === */
+.popular {
+    margin-top: 200px;
+}
+
+.popular .popular-top {
+    display: flex;
+    align-items: center;
+}
+
+.popular .desc {
+    margin-top: 16px;
+    width: 458px;
+}
+
+.popular .controls {
+    display: flex;
+    margin-left: auto;
+    gap: 18px;
+}
+
+.popular .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.popular .control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
 }
