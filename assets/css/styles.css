@@ -30,7 +30,7 @@ a {
 
 .btn {
     display: inline-block;
-    min-width: 144px;
+    min-width: 118px;
     padding: 11px 16px;
     background: #171100;
     border-radius: 999px;
@@ -67,6 +67,13 @@ a {
     font-size: 1.8rem;
     line-height: 1.67;
     color: #5f5b53;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 /* ==== Header ==== */
 .header {
@@ -122,6 +129,9 @@ a {
 
 .navbar .sign-up-btn {
     margin-left: 49px;
+    min-width: 144px;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 /* === Hero === */
@@ -281,7 +291,7 @@ a {
     align-items: center;
 }
 
-.popular .desc {
+.popular .info .desc {
     margin-top: 16px;
     width: 458px;
 }
@@ -306,5 +316,80 @@ a {
 
 .popular .control-btn:hover {
     color: #fff;
+    background: var(--primary-color);
+}
+
+/* Popualr-list */
+.popular-list {
+    margin-top: 55px;
+    display: flex;
+    gap: 30px;
+}
+
+.popular-list .item {
+    width: calc(100% / 3);
+    background: #ffff;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+
+.popular-list .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.popular-list .thumb {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.popular-list .body {
+    padding: 16px 22px 22px;
+}
+
+.popular-list .rating,
+.popular-list .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-list .title a {
+    margin-right: 6px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular-list .rating .value {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.popular-list .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.popular-list .row-bottom {
+    margin-top: 12px;
+}
+
+.popular-list .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.popular-list .popular-btn:hover {
     background: var(--primary-color);
 }
