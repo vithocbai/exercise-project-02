@@ -287,7 +287,8 @@ a {
 
 /* ===== Popular === */
 .popular {
-    margin-top: 200px;
+    margin-top: 135px;
+    padding: 65px 0;
 }
 
 .popular .popular-top {
@@ -400,7 +401,8 @@ a {
 
 /* === feedback === */
 .feedback {
-    margin-top: 200px;
+    margin-top: 135px;
+    padding: 96px 0;
     background: #2e2100;
 }
 
@@ -411,7 +413,7 @@ a {
 
 .feedback .feedback-item {
     display: flex;
-    padding: 96px 0;
+
     width: 100%;
     flex-shrink: 0;
     transform: translateX(-100%);
@@ -478,4 +480,75 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* === Features */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .image {
+    display: flex;
+    gap: 18px;
+}
+
+.features .image img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .image .lower {
+    margin-top: 34px;
+}
+
+.features .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 41%;
+}
+
+.features .desc {
+    margin-top: 18px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.features .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background: #ffb900;
+}
+
+/* featured-2 */
+.features-2nd {
+    margin-top: 70px;
+}
+
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+    width: 49%;
+}
+
+.features-2nd .cta-btn {
+    margin-top: 44px;
+}
+
+.features-2nd .image .img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
 }
